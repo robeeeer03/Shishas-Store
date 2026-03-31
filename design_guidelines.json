@@ -1,0 +1,84 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury)",
+  "typography": {
+    "fonts": [
+      {
+        "name": "Outfit",
+        "type": "heading",
+        "import_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap"
+      },
+      {
+        "name": "Manrope",
+        "type": "body",
+        "import_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      }
+    ],
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed text-[#A1A1AA]",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-[#FFB800]"
+    }
+  },
+  "colors": {
+    "background": "#0A0A0A",
+    "surface": "#141414",
+    "surface_hover": "#1C1C1E",
+    "primary": "#FFB800",
+    "primary_hover": "#F59E0B",
+    "primary_foreground": "#000000",
+    "text_primary": "#FAFAFA",
+    "text_secondary": "#A1A1AA",
+    "border": "rgba(255, 255, 255, 0.10)",
+    "border_hover": "rgba(255, 184, 0, 0.3)"
+  },
+  "layout": {
+    "spacing_system": "Generous (p-8, p-12, p-16). Containers with borders must have internal padding of p-6 or p-8.",
+    "grid_system": "Tetris Grid for categories (col-span-full md:col-span-8, etc). Control Room grid for Admin dashboard.",
+    "header": "Crystal Glassmorphism. bg-black/60 with backdrop-blur-2xl and 1px border-white/10.",
+    "cards": "Solid surface background (#141414) with 1px border-white/10. NO massive shadows. Flat and crisp."
+  },
+  "components": {
+    "button": "Square or very slightly rounded (rounded-sm). If primary: bg-[#FFB800] text-black font-bold hover:bg-[#F59E0B]. If secondary: bg-transparent border border-[#FFB800]/50 text-[#FFB800] hover:bg-[#FFB800]/10.",
+    "input": "bg-[#0A0A0A] border border-white/10 text-white focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800]",
+    "badge": "bg-[#FFB800]/10 text-[#FFB800] border border-[#FFB800]/20 rounded-full px-3 py-1 text-xs uppercase tracking-wider"
+  },
+  "animations": {
+    "hover": "transition-transform duration-300 ease-in-out",
+    "card_hover": "hover:-translate-y-1 hover:border-[#FFB800]/30 transition-all",
+    "entrance": "framer-motion staggered fade-up for product lists"
+  },
+  "pages": {
+    "home": {
+      "hero": "Asymmetrical layout. Large typography on left. Cinematic hookah image on right with black/40 overlay blending into background.",
+      "categories": "Bento grid layout showing Hookahs, Coals, Flavors, Accessories, Bases. Using large image background cards with heavy bottom gradients for text readability.",
+      "featured_products": "Clean horizontal scroll or 4-col grid. Minimalist product cards."
+    },
+    "shop": "Sidebar with categories/filters. 3-col or 4-col product grid. Clean and dense.",
+    "product_detail": "Two-column layout. Huge sticky image on left. Typography and add-to-cart on right. Generous whitespace.",
+    "cart": "Slide-out sheet (Shadcn) or dedicated clean page with order summary.",
+    "admin": "Control room grid. Dense Shadcn tables. Sidebar navigation."
+  },
+  "media": {
+    "images": {
+      "hero_background": "https://images.unsplash.com/photo-1574238752695-675b86d49267?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxob29rYWglMjBzaGlzaGElMjBwaXBlfGVufDB8fHx8MTc3NDk4MDA3NXww&ixlib=rb-4.1.0&q=85",
+      "category_hookahs": "https://images.unsplash.com/photo-1765293995398-bdb4d7c13e74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxob29rYWglMjBzaGlzaGElMjBwaXBlfGVufDB8fHx8MTc3NDk4MDA3NXww&ixlib=rb-4.1.0&q=85",
+      "category_flavors": "https://images.unsplash.com/photo-1762332248778-f80cd8108fbf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxob29rYWglMjBzaGlzaGElMjBwaXBlfGVufDB8fHx8MTc3NDk4MDA3NXww&ixlib=rb-4.1.0&q=85",
+      "category_coals": "https://images.unsplash.com/photo-1773039163026-1d622779fd71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxnbG93aW5nJTIwY2hhcmNvYWwlMjBlbWJlcnN8ZW58MHx8fHwxNzc0OTgwMDc1fDA&ixlib=rb-4.1.0&q=85",
+      "category_bases": "https://images.unsplash.com/photo-1574751749605-0f1e41b6cf67?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxob29rYWglMjBzaGlzaGElMjBwaXBlfGVufDB8fHx8MTc3NDk4MDA3NXww&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Strictly use the Dark Theme. Implement colors exactly as specified.",
+    "Do NOT use 'Inter' font. Use 'Outfit' for headings and 'Manrope' for body. Update tailwind.config.js and index.css to import and set these.",
+    "Ensure all cards have a 1px border of white/10 and flat backgrounds (#141414). Avoid muddy shadow blobs.",
+    "Use Phosphor Icons (@phosphor-icons/react) for a high-end luxury feel. Install it via 'yarn add @phosphor-icons/react'.",
+    "Create a 'Bento Grid' for the categories on the homepage (e.g., Hookahs taking up a large span, Coals taking a smaller square).",
+    "For the admin panel, use Shadcn tables, but keep the dark high-contrast aesthetic. It should look like a professional control room.",
+    "Ensure the hero section uses the provided image with a dark gradient overlay (e.g., bg-black/50 to bg-gradient-to-t) so the text is fully readable.",
+    "Add data-testid attributes to all interactive elements (buttons, links, cart actions) using kebab-case role-based names."
+  ]
+}
