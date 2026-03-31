@@ -210,7 +210,7 @@ async def admin_login(login: AdminLogin):
         return AdminLoginResponse(success=True, message="Login successful")
     raise HTTPException(status_code=401, detail="Invalid credentials")
 
-@api_router.post("/admin/products", response_model=Product)
+@api_router.post("/admin/products", response_model=Product, status_code=201)
 async def create_product(product_data: ProductCreate, admin: str = Depends(verify_admin)):
     product = Product(
         name=product_data.name,
